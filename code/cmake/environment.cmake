@@ -66,7 +66,7 @@ if (CMAKE_COMPILER_IS_GNUCXX)
 	add_definitions( -Wall )
 	add_definitions( -fopenmp )
 	add_definitions( -Wextra )
-	add_definitions( -Werror )
+	#  add_definitions( -Werror )
 	add_definitions( -pedantic )
 
 	# add flag allowing arbitrary library ordering (not default in newer distributions)

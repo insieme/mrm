@@ -1,0 +1,3 @@
+
+
+void kill(int t);

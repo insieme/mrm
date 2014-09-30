@@ -1,7 +1,7 @@
 #
 # Builds the insieme core library
 #
-project(empty CXX)
+project(mrm CXX)
 
 include(cmake/environment.cmake)
 
@@ -34,6 +34,7 @@ foreach ( case_file ${test_cases})
 
 	target_link_libraries(${case_name} project_lib)
 	target_link_libraries(${case_name} ${pthread_lib})
+	target_link_libraries(${case_name} gomp )
 
 	add_unit_test(${case_name})
 endforeach(case_file)
